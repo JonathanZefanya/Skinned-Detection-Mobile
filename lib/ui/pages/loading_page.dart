@@ -31,39 +31,61 @@ class _LoadingPageState extends State<LoadingPage> {
     super.dispose();
   }
 
+  // Load the TFLite model
   void _loadModel() async {
-    await Tflite.loadModel(
-      model: "assets/model.tflite",
-      labels: "assets/labels.txt",
-      numThreads: 1, // defaults to 1
-      isAsset: true, // defaults to true, set to false to load resources outside assets
-      useGpuDelegate: false // defaults to false, set to true to use GPU delegate
-    );
+    try {
+      String? res = await Tflite.loadModel(
+        model: "assets/model.tflite",
+        labels: "assets/labels.txt",
+        numThreads: 1,
+        isAsset: true,
+        useGpuDelegate: false,
+      );
+      print("Model loaded: $res");
+    } catch (e) {
+      print("Error loading model: $e");
+    }
   }
 
+  // Function to classify the image
   void _imageClasification(File? image) async {
-    var output = await Tflite.runModelOnImage(
-      path: image!.path,
-      numResults: 5,
-      threshold: 0.1,
-      imageMean: 1.0,
-      imageStd: 117.0,
-      asynch: true,
-    );
-    setState(() {
-      print(output![0]["label"]);
-      Future.delayed(const Duration(milliseconds: 500), () {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) => ResultPage(
-              image: widget.image,
-              pred: output,
-            ),
-          ),
-        );
-      });
-    });
+    if (image == null) {
+      print("No image provided for classification");
+      return;
+    }
+
+    try {
+      var output = await Tflite.runModelOnImage(
+        path: image.path,
+        numResults: 5, // Get top 5 results
+        threshold: 0.1, // Confidence threshold
+        imageMean: 1.0, // Image normalization mean
+        imageStd: 117.0, // Image normalization standard deviation
+        asynch: true,
+      );
+
+      if (output != null && output.isNotEmpty) {
+        // Classification successful, navigate to result page
+        setState(() {
+          print("Classification Result: ${output[0]["label"]}");
+          Future.delayed(const Duration(milliseconds: 500), () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ResultPage(
+                  image: widget.image,
+                  pred: output,
+                ),
+              ),
+            );
+          });
+        });
+      } else {
+        print("No output from classification");
+      }
+    } catch (e) {
+      print("Error during image classification: $e");
+    }
   }
 
   @override
