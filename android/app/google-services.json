@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "947034826396",
+    "project_id": "machine-learning-c7a69",
+    "storage_bucket": "machine-learning-c7a69.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947034826396:android:0a5385541b8f0e8018af59",
+        "android_client_info": {
+          "package_name": "com.zefanya.skinned"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947034826396-f8nc8juhgatqvjql5cnqu05li0cd4f59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zefanya.skinned",
+            "certificate_hash": "dc162b00f94d436f0ae0f6e6029ae8536043546e"
+          }
+        },
+        {
+          "client_id": "947034826396-a0k6uquqa2l55tm0av05i9v2mha1cuf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwLS2bBY6Qx6neQhQg2ImoExRgWGv5JrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947034826396-a0k6uquqa2l55tm0av05i9v2mha1cuf7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "947034826396-9t66m4tefmr4bvm48ujp4u9llae5m9m5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.skinDiseasesDetectionSystem"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
