@@ -224,15 +224,33 @@ class _DetailResultPageState extends State<DetailResultPage> {
               },
               style: ElevatedButton.styleFrom(
                 splashFactory: InkSparkle.splashFactory,
-                backgroundColor: const Color.fromARGB(255, 51, 51, 144),
+                backgroundColor: const Color.fromARGB(255, 255, 255, 255), // Dark blue base color
                 padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(13),
+                  borderRadius: BorderRadius.circular(15),
+                  side: const BorderSide(
+                    color: Color.fromARGB(255, 29, 33, 33), // Neon cyan border
+                    width: 2.0,
+                  ),
                 ),
-                foregroundColor: const Color.fromARGB(255, 255, 2, 2),
+                shadowColor: const Color.fromARGB(255, 0, 255, 255), // Shadow color matching the border
+                elevation: 10,
+                foregroundColor: const Color.fromARGB(255, 44, 37, 40), // Neon pink text color
               ),
               child: const Text(
                 "Lihat Info Lebih Lanjut Di Browser",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12,
+                  letterSpacing: 1.5,
+                  shadows: [
+                    Shadow(
+                      color: Color.fromARGB(255, 0, 255, 255),
+                      blurRadius: 5,
+                      offset: Offset(0, 0),
+                    ),
+                  ],
+                ),
               ),
             ),
             SizedBox(
