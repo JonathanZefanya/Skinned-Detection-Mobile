@@ -1,48 +1,16 @@
-# Skin Diseases Detection App 🌐
+# skined
 
-A powerful mobile application for detecting skin diseases using TensorFlow Lite, Flutter, and Firebase. This app aims to provide users with an easy-to-use solution to identify potential skin conditions right from their smartphones.
+A new Flutter project.
 
----
+## Getting Started
 
-## Features 🚀
+This project is a starting point for a Flutter application.
 
-- **Real-time Detection**: Leveraging TensorFlow Lite for on-device image classification.
-- **Seamless User Experience**: Built with Flutter for smooth cross-platform performance.
-- **Data Management**: Uses Firebase Firestore for secure data storage and Firebase Storage for image handling.
-- **User Authentication**: Firebase Authentication ensures secure access to user data and application features.
+A few resources to get you started if this is your first Flutter project:
 
----
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-## Getting Started 🛠
-
-### Prerequisites
-
-Ensure you have Flutter installed and configured. You'll also need Firebase configuration files to integrate Firebase services.
-
-1. **Flutter Packages**: Run the following command to install required packages.
-   ```bash
-   flutter pub get
-   ```
-
-2. **Firebase Setup**:
-   - Add the `google-services.json` file to the Android folder.
-   - Configure `firebase_options.dart` in your Flutter project.
-
-### Firebase Configuration
-
-To fully enable Firebase functionalities in the app, make sure to set up the following Firebase services:
-
-1. **Authentication**: Enable authentication for secure user logins.
-2. **Firestore Database**: Set up a Firestore Database for storing and managing detection results.
-3. **Storage**: Firebase Storage is used to handle image uploads and management.
-
----
-
-## Screenshots 📸
-Ongoing
-
----
-
-## Contributing 🤝
-
-We welcome contributions! Please feel free to submit pull requests to improve the app, whether it’s for bug fixes, feature enhancements, or documentation.
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

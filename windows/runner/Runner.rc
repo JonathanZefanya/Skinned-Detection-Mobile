@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "skin_diseases_detection_system" "\0"
+            VALUE "FileDescription", "skined" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "skin_diseases_detection_system" "\0"
+            VALUE "InternalName", "skined" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "skin_diseases_detection_system.exe" "\0"
-            VALUE "ProductName", "skin_diseases_detection_system" "\0"
+            VALUE "OriginalFilename", "skined.exe" "\0"
+            VALUE "ProductName", "skined" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -1,6 +1,6 @@
 {
-    "name": "skin_diseases_detection_system",
-    "short_name": "skin_diseases_detection_system",
+    "name": "skined",
+    "short_name": "skined",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

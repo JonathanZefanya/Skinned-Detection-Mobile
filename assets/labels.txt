@@ -1,6 +1,5 @@
-Jerawat dan Rosacea
-Eksim
-Normal
-Psoriasis
-vitiligo
-Kanker Kulit Melanoma, Nevi, dan Kutil
+0 jerawat
+1 kurap
+2 kudis
+3 dermatitis
+4 kutil
