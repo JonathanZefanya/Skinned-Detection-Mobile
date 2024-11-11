@@ -46,7 +46,7 @@ class _LoadingPageState extends State<LoadingPage> {
     var output = await Tflite.runModelOnImage(
       path: image!.path,
       numResults: 5,
-      threshold: 0.1,
+      threshold: 0.5,
       imageMean: 1.0,
       imageStd: 117.0,
       asynch: true,
