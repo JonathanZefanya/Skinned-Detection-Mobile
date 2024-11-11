@@ -208,22 +208,31 @@ class _DetailResultPageState extends State<DetailResultPage> {
             ElevatedButton(
               onPressed: () async {
                 var penyakit = widget.penyakit;
-                var url = Uri.https('www.google.com', 'search',{'q': 'kulit $penyakit'});
-                if (await canLaunchUrl(url)) {
-                  await launchUrl(url);
+                var url = Uri.https('www.google.com', 'search', {'q': 'Kulit $penyakit'});
+                try {
+                  if (await canLaunchUrl(url)) {
+                    await launchUrl(
+                      url,
+                      mode: LaunchMode.platformDefault,
+                    );
+                  } else {
+                    print("Tidak dapat membuka URL");
+                  }
+                } catch (e) {
+                  print("Error saat membuka URL: $e");
                 }
               },
               style: ElevatedButton.styleFrom(
-                  splashFactory: InkSparkle.splashFactory,
-                  backgroundColor: CupertinoColors.opaqueSeparator,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(13),
-                  ),
-                  foregroundColor: Colors.black),
+                splashFactory: InkSparkle.splashFactory,
+                backgroundColor: const Color.fromARGB(255, 51, 51, 144),
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(13),
+                ),
+                foregroundColor: const Color.fromARGB(255, 255, 2, 2),
+              ),
               child: const Text(
-                "View more info.",
+                "Lihat Info Lebih Lanjut Di Browser",
               ),
             ),
             SizedBox(
