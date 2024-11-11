@@ -19,7 +19,7 @@ To run this project locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/skinned_detection_app.git
+   git clone https://github.com/JonathanZefanya/Skinned-Detection-Mobile.git
    cd skinned_detection_app
    flutter run
    or
