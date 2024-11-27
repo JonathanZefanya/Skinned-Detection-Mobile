@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Hello Friends,',
+                        'Hello Guys,',
                         style: latoTextStyle.copyWith(
                           fontSize: 20,
                           fontWeight: weightBold,
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       Text(
-                        'don’t forget to keep your\nskinhealthy',
+                        'don’t forget to keep your\nskin healthy',
                         style: latoTextStyle.copyWith(
                           fontSize: 19,
                           fontWeight: weightBold,
