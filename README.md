@@ -26,5 +26,6 @@ To run this project locally:
    flutter build apk
 
 ## To-Do List
-1. Fix the TFLite Model: Optimize and adjust the TensorFlow Lite model for more accurate skin condition detection.
+1. Fix the TFLite Model: Optimize and adjust the TensorFlow Lite model for more accurate skin condition detection. (Done)
 2. Improve Results Page: Enhance the user interface and user experience on the results page to display more informative data.
+3. Fix Scanning Page Load Data 
