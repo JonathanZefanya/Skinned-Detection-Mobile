@@ -137,7 +137,7 @@ class _DetailResultPageState extends State<DetailResultPage> {
             borderRadius: BorderRadius.circular(10),
             // border color
             border: Border.all(
-              color: blueColor,
+              color: const Color.fromARGB(255, 59, 183, 47),
               width: getProportionateScreenWidth(3),
             ),
             image: DecorationImage(
@@ -233,7 +233,7 @@ class _DetailResultPageState extends State<DetailResultPage> {
                     width: 2.0,
                   ),
                 ),
-                shadowColor: const Color.fromARGB(255, 0, 255, 255), // Shadow color matching the border
+                // shadowColor: const Color.fromARGB(255, 0, 255, 255), // Shadow color matching the border
                 elevation: 10,
                 foregroundColor: const Color.fromARGB(255, 44, 37, 40), // Neon pink text color
               ),
@@ -241,14 +241,14 @@ class _DetailResultPageState extends State<DetailResultPage> {
                 "Lihat Info Lebih Lanjut Di Browser",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 12,
-                  letterSpacing: 1.5,
+                  fontSize: 13,
+                  letterSpacing: 1,
                   shadows: [
-                    Shadow(
-                      color: Color.fromARGB(255, 0, 255, 255),
-                      blurRadius: 5,
-                      offset: Offset(0, 0),
-                    ),
+                    // Shadow(
+                    //   color: Color.fromARGB(255, 0, 255, 255),
+                    //   blurRadius: 5,
+                    //   offset: Offset(0, 0),
+                    // ),
                   ],
                 ),
               ),

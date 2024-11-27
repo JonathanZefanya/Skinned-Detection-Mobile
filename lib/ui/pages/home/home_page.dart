@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
     return Container(
       width: double.infinity,
       height: MediaQuery.of(context).size.height,
-      color: blueColor,
+      color: const Color.fromARGB(255, 59, 183, 47),
       child: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Column(
@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Hello Guys,',
+                        'Hello User,',
                         style: latoTextStyle.copyWith(
                           fontSize: 20,
                           fontWeight: weightBold,
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       Text(
-                        'don’t forget to keep your\nskin healthy',
+                        'Jangan lupa cek kulitmu ya!\nagar tetap sehat dan terawat\nkalau tidak sehat, bisa konsul\nke maomao :)',
                         style: latoTextStyle.copyWith(
                           fontSize: 19,
                           fontWeight: weightBold,
@@ -196,7 +196,7 @@ class _HomePageState extends State<HomePage> {
                             left: getProportionateScreenWidth(30),
                           ),
                           child: Text(
-                            'Articles',
+                            'Artikel',
                             style: latoTextStyle.copyWith(
                               fontSize: 20,
                               fontWeight: weightBold,

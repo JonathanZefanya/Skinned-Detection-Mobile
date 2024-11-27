@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 const LinearGradient primaryGradient = LinearGradient(
-    colors: [Color(0xFF5AA9E6), Color(0xFF5680E9)],
+    colors: [Color.fromARGB(255, 109, 230, 90), Color.fromARGB(255, 86, 233, 111)],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter);
 

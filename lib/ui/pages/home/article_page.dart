@@ -28,7 +28,7 @@ class ArticlePage extends StatelessWidget {
             padding: EdgeInsets.only(top: getProportionateScreenHeight(10)),
             width: double.infinity,
             decoration: const BoxDecoration(
-              color: blueColor,
+              color: const Color.fromARGB(255, 59, 183, 47),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(10),
                 bottomRight: Radius.circular(10),
@@ -36,7 +36,7 @@ class ArticlePage extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                'Articles',
+                'Artikel',
                 style: latoTextStyle.copyWith(
                   fontSize: getProportionateScreenWidth(20),
                   fontWeight: weightBold,

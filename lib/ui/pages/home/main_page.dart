@@ -22,7 +22,7 @@ class MainPage extends StatelessWidget {
     Widget customNavigationBar() {
       return Container(
         decoration: BoxDecoration(
-          color: blueColor,
+          color: const Color.fromARGB(255, 59, 183, 47),
           borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(20),
             topRight: Radius.circular(20),
@@ -50,7 +50,7 @@ class MainPage extends StatelessWidget {
             color: Colors.white54,
             fontSize: getProportionateScreenWidth(12),
           ),
-          selectedItemColor: yellowColor,
+          selectedItemColor: const Color.fromARGB(255, 47, 116, 255),
           unselectedItemColor: Colors.white54,
           showUnselectedLabels: true,
           items: [
@@ -59,15 +59,15 @@ class MainPage extends StatelessWidget {
               icon: Icon(
                 Icons.home,
                 size: getProportionateScreenWidth(30),
-                color: pageProvider.currentIndex == 0 ? yellowColor : Colors.white54,
+                color: pageProvider.currentIndex == 0 ? const Color.fromARGB(255, 47, 116, 255) : Colors.white54,
               ),
             ),
             BottomNavigationBarItem(
-              label: 'Article',
+              label: 'Artikel',
               icon: Icon(
                 Icons.article,
                 size: getProportionateScreenWidth(26),
-                color: pageProvider.currentIndex == 1 ? yellowColor : Colors.white54,
+                color: pageProvider.currentIndex == 1 ? const Color.fromARGB(255, 47, 116, 255) : Colors.white54,
               ),
             ),
           ],

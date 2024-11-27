@@ -33,7 +33,7 @@ class DetailArticle extends StatelessWidget {
           padding: EdgeInsets.only(top: getProportionateScreenHeight(20)),
           width: double.infinity,
           decoration: const BoxDecoration(
-            color: blueColor,
+            color: const Color.fromARGB(255, 59, 183, 47),
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(10),
               bottomRight: Radius.circular(10),
